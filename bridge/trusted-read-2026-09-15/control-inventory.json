@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "kind": "google-docs-trusted-read-context",
+  "target": {
+    "documentId": "1B_Am3ONG2grNgLWqwwTLyt_6eTFQGXb1SK-SwLJEVFg",
+    "title": "Wintermute Alpha Challenge",
+    "revisionId": "ANLCKQlOIoWKeeF2QCVSC5rTjKyGhWV10mcBEK12hS8WEiuIuIKGrfIpU8xUJZnbt1qAE2u0RkFhhqyq89sTPAvz6-GvajCIWVyBi862vex0",
+    "documentUrl": "https://docs.google.com/document/d/1B_Am3ONG2grNgLWqwwTLyt_6eTFQGXb1SK-SwLJEVFg",
+    "selectedTabId": null
+  },
+  "dropdownMetadata": {
+    "status": "unavailable",
+    "resolvedTool": null,
+    "authoritative": false,
+    "count": 0
+  },
+  "derivedControlInventory": {
+    "hasProtectedControls": false,
+    "authoritativeDropdownCount": 0,
+    "opaqueControlCount": 0,
+    "nativeElementCounts": {
+      "inlineObjectElement": 3
+    },
+    "tabsScanned": [
+      "t.0"
+    ],
+    "controls": [],
+    "nativeElements": [
+      {
+        "type": "inlineObjectElement",
+        "startIndex": 1419,
+        "endIndex": 1420,
+        "tabId": "t.0",
+        "segmentId": null,
+        "container": {
+          "kind": "paragraph",
+          "path": "root.tabs[0].body.content[10]",
+          "tabId": "t.0",
+          "segmentId": null,
+          "startIndex": 1419,
+          "endIndex": 1421,
+          "namedStyleType": "NORMAL_TEXT",
+          "listId": null,
+          "nestingLevel": null,
+          "table": null
+        },
+        "properties": {
+          "inlineObjectId": "kix.h7bke2rjx1em",
+          "textStyle": {}
+        }
+      },
+      {
+        "type": "inlineObjectElement",
+        "startIndex": 1926,
+        "endIndex": 1927,
+        "tabId": "t.0",
+        "segmentId": null,
+        "container": {
+          "kind": "paragraph",
+          "path": "root.tabs[0].body.content[14]",
+          "tabId": "t.0",
+          "segmentId": null,
+          "startIndex": 1926,
+          "endIndex": 1928,
+          "namedStyleType": "NORMAL_TEXT",
+          "listId": null,
+          "nestingLevel": null,
+          "table": null
+        },
+        "properties": {
+          "inlineObjectId": "kix.abpyz2kdgcrt",
+          "textStyle": {}
+        }
+      },
+      {
+        "type": "inlineObjectElement",
+        "startIndex": 2718,
+        "endIndex": 2719,
+        "tabId": "t.0",
+        "segmentId": null,
+        "container": {
+          "kind": "paragraph",
+          "path": "root.tabs[0].body.content[18]",
+          "tabId": "t.0",
+          "segmentId": null,
+          "startIndex": 2718,
+          "endIndex": 2720,
+          "namedStyleType": "NORMAL_TEXT",
+          "listId": null,
+          "nestingLevel": null,
+          "table": null
+        },
+        "properties": {
+          "inlineObjectId": "kix.8zi6hopulrvs",
+          "textStyle": {}
+        }
+      }
+    ]
+  },
+  "editGuidance": {
+    "advisoryOnly": true,
+    "requiresTargetedPreservation": false,
+    "recommendedBehavior": "No protected controls were detected in the scanned scope.",
+    "warnings": []
+  }
+}

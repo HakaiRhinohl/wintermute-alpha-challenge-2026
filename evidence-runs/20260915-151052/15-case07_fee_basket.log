@@ -1,0 +1,236 @@
+
+==============================================================================
+[15/17] case07_fee_basket
+$ forge test --match-path challenges/07-firepit/FeeBasketInspector.t.sol -vv
+==============================================================================
+No files changed, compilation skipped
+
+Ran 1 test for challenges/07-firepit/FeeBasketInspector.t.sol:FeeBasketInspector
+[PASS] test_InspectCollectableBasket() (gas: 4390464)
+Logs:
+  relevant direct USDT0 pool 0x63d62734847E55A266FCa4219A9aD0a02D5F6e02
+  other token 0xe538905cf8410324e03A5A23C1c177a474D59b2b
+  fee tier 3000
+  relevant direct USDT0 pool 0x5fcFb33C9AB1665FeE892eB2aF163e863a874D73
+  other token 0xb7C00000bcDEeF966b20B3D884B98E64d2b06b4f
+  fee tier 500
+  relevant direct USDT0 pool 0x9e485CC2Ec10E87A9B6e58602889Df392B7F6453
+  other token 0xe538905cf8410324e03A5A23C1c177a474D59b2b
+  fee tier 100
+  relevant direct USDT0 pool 0xe3BE6A0137f1b0602Fc1a4841686f43B340a5082
+  other token 0xe538905cf8410324e03A5A23C1c177a474D59b2b
+  fee tier 500
+  relevant direct USDT0 pool 0x77ef18adF35f62B2Ad442e4370cDbC7fe78B7dcC
+  other token 0xE7B000003A45145decf8a28FC755aD5eC5EA025A
+  fee tier 500
+  relevant direct USDT0 pool 0x1200E29A106F9e1eE5334D741A1f26346AA49aF2
+  other token 0xeB9580c3946BB47d73AAE1d4f7A94148B554b2F4
+  fee tier 3000
+  relevant direct USDT0 pool 0x2B702e9D8925251eB7e59950Cc22e4110750D59d
+  other token 0xE7B000003A45145decf8a28FC755aD5eC5EA025A
+  fee tier 3000
+  relevant direct USDT0 pool 0x75255002FEc0E917BF3c8FB588c4C0218460eC5c
+  other token 0xb7C00000bcDEeF966b20B3D884B98E64d2b06b4f
+  fee tier 3000
+  relevant direct USDT0 pool 0x1598889895752De04cb12d23ef60fC7Ca7907922
+  other token 0xE7B000003A45145decf8a28FC755aD5eC5EA025A
+  fee tier 100
+  relevant direct USDT0 pool 0x6CF6A073dDdd6fdD74b1b9f149621E85f01AACb9
+  other token 0xb7C00000bcDEeF966b20B3D884B98E64d2b06b4f
+  fee tier 100
+  relevant direct USDT0 pool 0x4651300221f345a4c6F566079BD1DDC291049c7d
+  other token 0x505000008DE8748DBd4422ff4687a4FC9bEba15b
+  fee tier 500
+  relevant direct USDT0 pool 0x0cBe0dBE1400e57f371a38BD3b9bC80F7C3676dA
+  other token 0x4ae46a509F6b1D9056937BA4500cb143933D2dc8
+  fee tier 100
+  relevant direct USDT0 pool 0xB950ACA3c8aF801156A105FdFf78162B1EE69209
+  other token 0x505000008DE8748DBd4422ff4687a4FC9bEba15b
+  fee tier 100
+  collection failed for pool 0xB950ACA3c8aF801156A105FdFf78162B1EE69209
+  0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000034c4f4b0000000000000000000000000000000000000000000000000000000000
+  === Aggregated assets transferred to TokenJar by collect() ===
+  token 0x779Ded0c9e1022225f8E0630b35a9b54bE713736
+  symbol USD₮0
+  decimals
+  6
+  total raw
+  26570237066
+  token 0xe538905cf8410324e03A5A23C1c177a474D59b2b
+  symbol WOKB
+  decimals
+  18
+  total raw
+  134299654224125748759
+  token 0xb7C00000bcDEeF966b20B3D884B98E64d2b06b4f
+  symbol xBTC
+  decimals
+  8
+  total raw
+  4374949
+  token 0xE7B000003A45145decf8a28FC755aD5eC5EA025A
+  symbol xETH
+  decimals
+  18
+  total raw
+  2299560121383716032
+  token 0xceF6c74Ce218c0E1F48cA2430635D0a65Cd3737A
+  symbol satUSD
+  decimals
+  18
+  total raw
+  209677955016814116
+  token 0xeB9580c3946BB47d73AAE1d4f7A94148B554b2F4
+  symbol AOXC
+  decimals
+  18
+  total raw
+  13142411495872273743286
+  token 0x87669801A1FaD6DAD9dB70d27Ac752f452989667
+  symbol NIUMA
+  decimals
+  18
+  total raw
+  1539782936394972950734
+  token 0xc48E258b6dB8Bc00F6715B471BE48D4DD2B12533
+  symbol boost
+  decimals
+  18
+  total raw
+  28374977072454427719
+  token 0x82a0e26429472701A2D85d0d40d8C3a4371fd280
+  symbol 1coin
+  decimals
+  18
+  total raw
+  211896289143
+  token 0xE54357D170e2521C1638e2c8Ec138EECEbfC3e39
+  symbol $AIGENT
+  decimals
+  18
+  total raw
+  61533116022
+  token 0xeD275F805F1a31f8B9cCDa2C8e2C77A09c5BD3c5
+  symbol TUSD  
+  decimals
+  18
+  total raw
+  32086923837181
+  token 0xA523fAfCE0cA8b296378298a265289B61A5F8615
+  symbol XRP
+  decimals
+  18
+  total raw
+  37499999999999
+  token 0xB6CEceAB302E2E4948951eE7843FC24E92933061
+  symbol USDC
+  decimals
+  6
+  total raw
+  226529596
+  token 0xd624079F9062AAb098D28a05bAD2f19614e6C5Ac
+  symbol GPU
+  decimals
+  18
+  total raw
+  162809673320463391868
+  token 0xa8ddb5Cd96b5222AFe198316E9A57CAA642850D5
+  symbol wNVDAx
+  decimals
+  18
+  total raw
+  3283684166276647520
+  token 0x8aD3c73F833d3F9A523aB01476625F269aEB7Cf0
+  symbol TSLAx
+  decimals
+  18
+  total raw
+  429476187343234
+  token 0xc3FdBe3A68EE5dE461D30415a8165cf9Aefe1171
+  symbol wTSLAx
+  decimals
+  18
+  total raw
+  6130795363072599
+  token 0x8e2eeD8b8B5E13Ea7BF38e50d7821d2C57309072
+  symbol wSPCXx
+  decimals
+  18
+  total raw
+  1329137931645
+  token 0x7978D59beD7626cb63b16b8Bbbebd5B0C4A5029D
+  symbol USDD ᅠ
+  decimals
+  18
+  total raw
+  3492227052348886
+  token 0x943BF64D566c32A2Bcd41AC92FB63C111cC9De8f
+  symbol wAAPLx
+  decimals
+  18
+  total raw
+  3375132587942
+  token 0x74b7F16337b8972027F6196A17a631aC6dE26d22
+  symbol USDC
+  decimals
+  6
+  total raw
+  40275
+  token 0x5A77f1443D16ee5761d310e38b62f77f726bC71c
+  symbol WETH
+  decimals
+  18
+  total raw
+  541551306
+  token 0x505000008DE8748DBd4422ff4687a4FC9bEba15b
+  symbol xSOL
+  decimals
+  9
+  total raw
+  47504167956
+  token 0x4ae46a509F6b1D9056937BA4500cb143933D2dc8
+  symbol USDG
+  decimals
+  6
+  total raw
+  2712818973
+  token 0x1E4a5963aBFD975d8c9021ce480b42188849D41d
+  symbol USDT
+  decimals
+  6
+  total raw
+  14317
+  token 0x200c6570B00055C2e2754D34C002baE24CcF525C
+  symbol FBLH
+  decimals
+  18
+  total raw
+  5556007063
+  token 0x21836B7007eD1c750F0d0BFac3639DF47CFF7353
+  symbol TUSD  
+  decimals
+  18
+  total raw
+  25502970666025
+  token 0x37e58aE8AE7B5082dA9c735483C6A37F7F2608dD
+  symbol USDD ᅠ
+  decimals
+  18
+  total raw
+  28357264108680972
+  token 0x5b9c8C6953B78a25C3ea2c5e3610C3A8c8bc9F94
+  symbol USDD ᅠ
+  decimals
+  18
+  total raw
+  748929376842517
+  token 0x7613ECC13118d0324cBaaDc5972f68d7541F08Ea
+  symbol USDK
+  decimals
+  9
+  total raw
+  457307
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 675.34ms (13.96ms CPU time)
+
+Ran 1 test suite in 714.85ms (675.34ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

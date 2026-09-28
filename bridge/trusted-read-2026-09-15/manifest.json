@@ -1,0 +1,59 @@
+{
+  "bridgeVersion": "3.6",
+  "kind": "google-docs-trusted-read",
+  "status": "complete",
+  "outputDir": "/Users/jose/Documents/ChatGPT/Wintermute alpha challenge/bridge/trusted-read-2026-09-15",
+  "target": {
+    "documentId": "1B_Am3ONG2grNgLWqwwTLyt_6eTFQGXb1SK-SwLJEVFg",
+    "title": "Wintermute Alpha Challenge",
+    "revisionId": "ANLCKQlOIoWKeeF2QCVSC5rTjKyGhWV10mcBEK12hS8WEiuIuIKGrfIpU8xUJZnbt1qAE2u0RkFhhqyq89sTPAvz6-GvajCIWVyBi862vex0",
+    "documentUrl": "https://docs.google.com/document/d/1B_Am3ONG2grNgLWqwwTLyt_6eTFQGXb1SK-SwLJEVFg",
+    "selectedTabId": null
+  },
+  "dropdownMetadata": {
+    "status": "unavailable",
+    "resolvedTool": null,
+    "authoritative": false,
+    "count": 0
+  },
+  "controlAwareness": {
+    "hasProtectedControls": false,
+    "authoritativeDropdownCount": 0,
+    "opaqueControlCount": 0,
+    "affectedParagraphCount": 0,
+    "nativeElementCounts": {
+      "inlineObjectElement": 3
+    },
+    "preservationRequired": false,
+    "recommendedBehavior": "No protected controls were detected in the scanned scope."
+  },
+  "warnings": [],
+  "files": {
+    "document_result": {
+      "path": "/Users/jose/Documents/ChatGPT/Wintermute alpha challenge/bridge/trusted-read-2026-09-15/document-result.json",
+      "bytes": 142196,
+      "sha256": "4f4b7f7b90dbc425710491459236f8f8461aba0f8f89c5e2d19a4e15e7dd3e31"
+    },
+    "control_inventory": {
+      "path": "/Users/jose/Documents/ChatGPT/Wintermute alpha challenge/bridge/trusted-read-2026-09-15/control-inventory.json",
+      "bytes": 2941,
+      "sha256": "772a0a9188fcdcb65f87425beccc0a4c1f1ee3ce0e675b695b828f3b4148fdf8"
+    },
+    "document_outline": {
+      "path": "/Users/jose/Documents/ChatGPT/Wintermute alpha challenge/bridge/trusted-read-2026-09-15/document-outline.json",
+      "bytes": 20663,
+      "sha256": "67a855d6610f492c3eeae6946ec2bd0092f6950f3b91b1a057c258dea08d8698"
+    },
+    "document_text": {
+      "path": "/Users/jose/Documents/ChatGPT/Wintermute alpha challenge/bridge/trusted-read-2026-09-15/document-text.md",
+      "bytes": 5548,
+      "sha256": "ed796c2ae57c2308ead4ea3cc9ebbabb4a39fec7aa25c871a61b28c17911b192"
+    },
+    "receipt": {
+      "path": "/Users/jose/Documents/ChatGPT/Wintermute alpha challenge/bridge/trusted-read-2026-09-15/receipt.json",
+      "bytes": 999,
+      "sha256": "ce2c06b23a9236f855d137885aa0cbb9e57537357316e630fc90a02099a973ab"
+    }
+  },
+  "error": null
+}

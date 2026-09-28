@@ -1,0 +1,7 @@
+
+==============================================================================
+[4/17] case06_cashcat_mint
+$ /Library/Developer/CommandLineTools/usr/bin/python3 scripts/inspect_cashcat_launch.py
+==============================================================================
+CASHCAT mint events through block 120000: 1
+block  88836  0x0000000000000000000000000000000000000000 -> 0xd9ec2db5f3d1b236843925949fe5bd8a3836fccb  raw=1000000000000000000000000000  <-- initial mint

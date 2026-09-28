@@ -1,0 +1,85 @@
+
+==============================================================================
+[17/17] case07_direct_exit_quotes
+$ forge test --match-path challenges/07-firepit/CoreLiquidationQuotes.t.sol -vv
+==============================================================================
+No files changed, compilation skipped
+
+Ran 3 tests for challenges/07-firepit/CoreLiquidationQuotes.t.sol:CoreLiquidationQuotes
+[PASS] test_QuoteAlternativePaths() (gas: 953049)
+Logs:
+  === Alternative two-hop exits ===
+  xBTC -> USDG, 0.05%
+  USDT0-or-intermediate output raw
+  3023263257
+  xBTC -> USDG -> USDT0
+  USDT0-or-intermediate output raw
+  3025231693
+  xETH -> USDG, 0.05%
+  USDT0-or-intermediate output raw
+  5149195887
+  xETH -> USDG -> USDT0
+  USDT0-or-intermediate output raw
+  5152547270
+  USDG -> USDC, 0.01%
+  USDT0-or-intermediate output raw
+  2713574199
+  USDG -> USDC -> USDT0
+  USDT0-or-intermediate output raw
+  2714292510
+  GPU -> wNVDAx, 1%
+  USDT0-or-intermediate output raw
+  149959438886820
+  GPU -> wNVDAx -> USDT0
+  USDT0-or-intermediate output raw
+  32662
+
+[PASS] test_QuoteLargeDirectExits() (gas: 4783350)
+Logs:
+  === Large direct exits into USDT0 ===
+  USDT0 already collected (raw)
+  26570237066
+  WOKB -> USDT0, 0.01%
+  USDT0-or-intermediate output raw
+  13555867270
+  WOKB -> USDT0, 0.05%
+  USDT0-or-intermediate output raw
+  13774451982
+  WOKB -> USDT0, 0.30%
+  USDT0-or-intermediate output raw
+  13460057405
+  xBTC -> USDT0, 0.01%
+  USDT0-or-intermediate output raw
+  2960137037
+  xBTC -> USDT0, 0.05%
+  USDT0-or-intermediate output raw
+  36988034
+  xETH -> USDT0, 0.05%
+  USDT0-or-intermediate output raw
+  7085746
+  USDG -> USDT0, 0.01%
+  USDT0-or-intermediate output raw
+  2714585376
+
+[PASS] test_QuoteSecondaryDirectExits() (gas: 4126321)
+Logs:
+  === Secondary direct exits into USDT0 ===
+  NIUMA -> USDT0, 0.30%
+  USDT0-or-intermediate output raw
+  642856
+  wNVDAx -> USDT0, 0.30%
+  USDT0-or-intermediate output raw
+  714874992
+  xSOL -> USDT0, 0.05%
+  USDT0-or-intermediate output raw
+  15682
+  USDC -> USDT0, 0.01%
+  USDT0-or-intermediate output raw
+  226590158
+  satUSD -> USDT0, 0.30%
+  USDT0-or-intermediate output raw
+  208808
+
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 630.93ms (29.12ms CPU time)
+
+Ran 1 test suite in 666.23ms (630.93ms CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)

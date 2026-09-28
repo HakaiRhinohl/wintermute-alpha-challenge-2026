@@ -1,5 +1,2 @@
-# Signature of the first attempt to snipe the TRUMP token
-first_snipe =
-
-# Signature of the transaction that made TRUMP trading possible
-trading_possible =
+first_snipe = 41h3CuLHamSdfsmgWC887eoyvrTiUcGjhLZpKMeqE9Rg9ZkP42C2gBr5PrQM9D25jRFwwQYPfBUJYCEUXC1qAxcv
+trading_possible = 4SMUTho76nrPXxGNdDBNdBNbtbSC48oDDkivVKSdWUJR8KZGQwv1tEwJnHFXmpFDFkkLRupzzW28e6HHpv49afQt

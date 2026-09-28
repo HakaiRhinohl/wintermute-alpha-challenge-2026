@@ -1,0 +1,35 @@
+
+==============================================================================
+[14/17] case07_firepit_state
+$ forge test --match-path challenges/07-firepit/FirepitInspector.t.sol -vv
+==============================================================================
+No files changed, compilation skipped
+
+Ran 1 test for challenges/07-firepit/FirepitInspector.t.sol:FirepitInspector
+[PASS] test_InspectFirepit() (gas: 55768)
+Logs:
+  === Uniswap Firepit reconnaissance ===
+  fork block
+  68413600
+  firepit 0xe122E231cb52aea99690963Fd73E91e33E97468f
+  token jar 0x8Dd8B6D56e4a4A158EDbBfE7f2f703B8FFC1a754
+  resource configured 0x57FB37d035e6Ad0E687E0a50dC3F515691deB815
+  resource recipient 0xe122E231cb52aea99690963Fd73E91e33E97468f
+  required UNI raw
+  2000000000000000000000
+  current release nonce
+  0
+  user UNI raw
+  2000000000000000000000
+  user UNI allowance to firepit
+  0
+  USDT held by token jar raw
+  0
+  USDT held by token jar whole
+  0
+  target USDT whole
+  45000
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 697.28ms (391.71µs CPU time)
+
+Ran 1 test suite in 732.03ms (697.28ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

@@ -1,0 +1,8 @@
+
+==============================================================================
+[5/17] case06_cashcat_approvals
+$ /Library/Developer/CommandLineTools/usr/bin/python3 scripts/inspect_cashcat_approvals.py
+==============================================================================
+CASHCAT approvals by 0xd9ec2db5f3d1b236843925949fe5bd8a3836fccb through block 120000: 2
+block  88836  spender=0x73991a25c818bf1f1128deaab1492d45638de0d3  allowance raw=0
+block  88836  spender=0x73991a25c818bf1f1128deaab1492d45638de0d3  allowance raw=1000000000000000000000000000

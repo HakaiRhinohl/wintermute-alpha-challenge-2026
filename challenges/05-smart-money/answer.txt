@@ -1,11 +1,11 @@
 # Name of the protocol the first fundraise (0xAf09...Dc95) was for
-protocol_one =
+protocol_one = C3 Protocol
 
 # Name of the VC behind 0xC29A...8C1f
-investor_one =
+investor_one = Node Capital
 
 # Name of the protocol behind 0xe53e...AC8f
-protocol_two =
+protocol_two = Aligned Layer
 
 # Name of the company behind 0x4c2c...00B8
-company =
+company = Bridge

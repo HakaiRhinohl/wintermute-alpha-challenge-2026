@@ -1,0 +1,3566 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Action completed."
+    }
+  ],
+  "structuredContent": {
+    "documentId": "1B_Am3ONG2grNgLWqwwTLyt_6eTFQGXb1SK-SwLJEVFg",
+    "title": "Wintermute Alpha Challenge",
+    "revisionId": "ANLCKQlOIoWKeeF2QCVSC5rTjKyGhWV10mcBEK12hS8WEiuIuIKGrfIpU8xUJZnbt1qAE2u0RkFhhqyq89sTPAvz6-GvajCIWVyBi862vex0",
+    "suggestionsViewMode": "SUGGESTIONS_INLINE",
+    "url": null,
+    "body": null,
+    "tabs": [
+      {
+        "tabId": "t.0",
+        "title": "Tab 1",
+        "parentTabId": null,
+        "index": 0,
+        "nestingLevel": null,
+        "iconEmoji": null,
+        "body": {
+          "content": [
+            {
+              "endIndex": 1,
+              "sectionBreak": {
+                "sectionStyle": {
+                  "columnSeparatorStyle": "NONE",
+                  "contentDirection": "LEFT_TO_RIGHT",
+                  "sectionType": "CONTINUOUS"
+                }
+              }
+            },
+            {
+              "startIndex": 1,
+              "endIndex": 186,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1,
+                    "endIndex": 186,
+                    "textRun": {
+                      "content": "The Wintermute Alpha Challenge is a set of investigations into how blockchain systems behave when contracts, transaction history, market structure, and cross-chain infrastructure meet.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 186,
+              "endIndex": 519,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 186,
+                    "endIndex": 519,
+                    "textRun": {
+                      "content": "The cases ask very different things of the solver: finding an address from onchain evidence, resolving a dispute game, reconstructing a historical auction, or reaching an L2 that does not expose a conventional bridge. What connects them is the need to reason from first principles rather than treating the blockchain as a black box.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 519,
+              "endIndex": 815,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 519,
+                    "endIndex": 815,
+                    "textRun": {
+                      "content": "This article documents the reasoning behind each solution. It is not intended as an answer key or a collection of opaque scripts. Every case starts with the relevant concepts, then explains how to identify the useful evidence, how to test a hypothesis, and finally how to reproduce the solution.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 815,
+              "endIndex": 991,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 815,
+                    "endIndex": 991,
+                    "textRun": {
+                      "content": "The objective is not only to show what works, but to explain why it works, which assumptions make it valid, and how the same reasoning can be applied to a new onchain problem.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 991,
+              "endIndex": 1018,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 991,
+                    "endIndex": 1018,
+                    "textRun": {
+                      "content": "## Case 01: Out of Nowhere\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "headingId": "h.r6t0v1bgrzdx",
+                  "namedStyleType": "HEADING_2",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 1018,
+              "endIndex": 1311,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1018,
+                    "endIndex": 1047,
+                    "textRun": {
+                      "content": "The case begins with a large ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 1047,
+                    "endIndex": 1060,
+                    "textRun": {
+                      "content": "USDC transfer",
+                      "textStyle": {
+                        "underline": true,
+                        "foregroundColor": {
+                          "color": {
+                            "rgbColor": {
+                              "red": 0.06666667,
+                              "green": 0.33333334,
+                              "blue": 0.8
+                            }
+                          }
+                        },
+                        "link": {
+                          "url": "https://etherscan.io/tx/0xe7b8d46c3f3e5f727cb42c9dfe7fc36855ab5092cf160e4c8812a2a27a84350b"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 1060,
+                    "endIndex": 1311,
+                    "textRun": {
+                      "content": " on Ethereum. Roughly $1.5 million is sent from Allbridge to an address that provides bridge liquidity. Looking only at Ethereum, the transfer appears to come out of nowhere. The task is to identify the transaction on the source chain that caused it.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 1311,
+              "endIndex": 1312,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1311,
+                    "endIndex": 1312,
+                    "textRun": {
+                      "content": "\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 1312,
+              "endIndex": 1418,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1312,
+                    "endIndex": 1418,
+                    "textRun": {
+                      "content": "A useful first lesson is that a bridge transfer is a coordinated pair of actions on separate blockchains.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 1418,
+              "endIndex": 1419,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1418,
+                    "endIndex": 1419,
+                    "textRun": {
+                      "content": "\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 1419,
+              "endIndex": 1421,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1419,
+                    "endIndex": 1420,
+                    "inlineObjectElement": {
+                      "inlineObjectId": "kix.h7bke2rjx1em",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 1420,
+                    "endIndex": 1421,
+                    "textRun": {
+                      "content": "\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 1421,
+              "endIndex": 1422,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1421,
+                    "endIndex": 1422,
+                    "textRun": {
+                      "content": "\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 1422,
+              "endIndex": 1621,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1422,
+                    "endIndex": 1621,
+                    "textRun": {
+                      "content": "The destination transaction proves that a release happened on Ethereum but it does not identify which source-chain initiated the transfer. To do that reliably, we need the bridge's correlation data.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 1621,
+              "endIndex": 1926,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1621,
+                    "endIndex": 1926,
+                    "textRun": {
+                      "content": "The ERC-20 transfer shows Allbridge sending USDC to the recipient, but amounts and recipients are weak search keys. The same address can bridge repeatedly, and many transfers can have the same rounded value. The more useful evidence is in Allbridge's `Received` event in the Ethereum transaction receipt:\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 1926,
+              "endIndex": 1928,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1926,
+                    "endIndex": 1927,
+                    "inlineObjectElement": {
+                      "inlineObjectId": "kix.abpyz2kdgcrt",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 1927,
+                    "endIndex": 1928,
+                    "textRun": {
+                      "content": "\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 1928,
+              "endIndex": 1970,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1928,
+                    "endIndex": 1970,
+                    "textRun": {
+                      "content": "The event tells us four different things:\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 1970,
+              "endIndex": 2311,
+              "table": {
+                "rows": 6,
+                "columns": 3,
+                "tableRows": [
+                  {
+                    "startIndex": 1971,
+                    "endIndex": 1995,
+                    "tableCells": [
+                      {
+                        "startIndex": 1972,
+                        "endIndex": 1979,
+                        "content": [
+                          {
+                            "startIndex": 1973,
+                            "endIndex": 1979,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 1973,
+                                  "endIndex": 1979,
+                                  "textRun": {
+                                    "content": "Field\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 1979,
+                        "endIndex": 1986,
+                        "content": [
+                          {
+                            "startIndex": 1980,
+                            "endIndex": 1986,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 1980,
+                                  "endIndex": 1986,
+                                  "textRun": {
+                                    "content": "Value\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 1986,
+                        "endIndex": 1995,
+                        "content": [
+                          {
+                            "startIndex": 1987,
+                            "endIndex": 1995,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 1987,
+                                  "endIndex": 1995,
+                                  "textRun": {
+                                    "content": "Meaning\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      }
+                    ],
+                    "tableRowStyle": {
+                      "minRowHeight": {
+                        "unit": "PT"
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 1995,
+                    "endIndex": 2070,
+                    "tableCells": [
+                      {
+                        "startIndex": 1996,
+                        "endIndex": 2007,
+                        "content": [
+                          {
+                            "startIndex": 1997,
+                            "endIndex": 2007,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 1997,
+                                  "endIndex": 2007,
+                                  "textRun": {
+                                    "content": "recipient\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 2007,
+                        "endIndex": 2020,
+                        "content": [
+                          {
+                            "startIndex": 2008,
+                            "endIndex": 2020,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2008,
+                                  "endIndex": 2020,
+                                  "textRun": {
+                                    "content": "0xEc5f…994b\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 2020,
+                        "endIndex": 2070,
+                        "content": [
+                          {
+                            "startIndex": 2021,
+                            "endIndex": 2070,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2021,
+                                  "endIndex": 2070,
+                                  "textRun": {
+                                    "content": "The EVM address that received the released USDC.\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      }
+                    ],
+                    "tableRowStyle": {
+                      "minRowHeight": {
+                        "unit": "PT"
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 2070,
+                    "endIndex": 2096,
+                    "tableCells": [
+                      {
+                        "startIndex": 2071,
+                        "endIndex": 2078,
+                        "content": [
+                          {
+                            "startIndex": 2072,
+                            "endIndex": 2078,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2072,
+                                  "endIndex": 2078,
+                                  "textRun": {
+                                    "content": "token\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 2078,
+                        "endIndex": 2084,
+                        "content": [
+                          {
+                            "startIndex": 2079,
+                            "endIndex": 2084,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2079,
+                                  "endIndex": 2084,
+                                  "textRun": {
+                                    "content": "USDC\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 2084,
+                        "endIndex": 2096,
+                        "content": [
+                          {
+                            "startIndex": 2085,
+                            "endIndex": 2096,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2085,
+                                  "endIndex": 2096,
+                                  "textRun": {
+                                    "content": "Asset paid\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      }
+                    ],
+                    "tableRowStyle": {
+                      "minRowHeight": {
+                        "unit": "PT"
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 2096,
+                    "endIndex": 2138,
+                    "tableCells": [
+                      {
+                        "startIndex": 2097,
+                        "endIndex": 2105,
+                        "content": [
+                          {
+                            "startIndex": 2098,
+                            "endIndex": 2105,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2098,
+                                  "endIndex": 2105,
+                                  "textRun": {
+                                    "content": "amount\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 2105,
+                        "endIndex": 2121,
+                        "content": [
+                          {
+                            "startIndex": 2106,
+                            "endIndex": 2121,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2106,
+                                  "endIndex": 2121,
+                                  "textRun": {
+                                    "content": "1,498,500 USDC\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 2121,
+                        "endIndex": 2138,
+                        "content": [
+                          {
+                            "startIndex": 2122,
+                            "endIndex": 2138,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2122,
+                                  "endIndex": 2138,
+                                  "textRun": {
+                                    "content": "Amount recieved\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      }
+                    ],
+                    "tableRowStyle": {
+                      "minRowHeight": {
+                        "unit": "PT"
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 2138,
+                    "endIndex": 2216,
+                    "tableCells": [
+                      {
+                        "startIndex": 2139,
+                        "endIndex": 2147,
+                        "content": [
+                          {
+                            "startIndex": 2140,
+                            "endIndex": 2147,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2140,
+                                  "endIndex": 2147,
+                                  "textRun": {
+                                    "content": "lockid\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 2147,
+                        "endIndex": 2183,
+                        "content": [
+                          {
+                            "startIndex": 2148,
+                            "endIndex": 2183,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2148,
+                                  "endIndex": 2183,
+                                  "textRun": {
+                                    "content": "0x0159fa4cd496a40b6531521bb9138a06\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 2183,
+                        "endIndex": 2216,
+                        "content": [
+                          {
+                            "startIndex": 2184,
+                            "endIndex": 2216,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2184,
+                                  "endIndex": 2216,
+                                  "textRun": {
+                                    "content": "The bridge transfer identifier.\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      }
+                    ],
+                    "tableRowStyle": {
+                      "minRowHeight": {
+                        "unit": "PT"
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 2216,
+                    "endIndex": 2310,
+                    "tableCells": [
+                      {
+                        "startIndex": 2217,
+                        "endIndex": 2225,
+                        "content": [
+                          {
+                            "startIndex": 2218,
+                            "endIndex": 2225,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2218,
+                                  "endIndex": 2225,
+                                  "textRun": {
+                                    "content": "source\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 2225,
+                        "endIndex": 2237,
+                        "content": [
+                          {
+                            "startIndex": 2226,
+                            "endIndex": 2237,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2226,
+                                  "endIndex": 2237,
+                                  "textRun": {
+                                    "content": "0x53544b5a\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      },
+                      {
+                        "startIndex": 2237,
+                        "endIndex": 2310,
+                        "content": [
+                          {
+                            "startIndex": 2238,
+                            "endIndex": 2310,
+                            "paragraph": {
+                              "elements": [
+                                {
+                                  "startIndex": 2238,
+                                  "endIndex": 2310,
+                                  "textRun": {
+                                    "content": "The source-chain code, `STKZ`, for Stacks (you have to decode 53544b5a)\n",
+                                    "textStyle": {}
+                                  }
+                                }
+                              ],
+                              "paragraphStyle": {
+                                "namedStyleType": "NORMAL_TEXT",
+                                "alignment": "START",
+                                "lineSpacing": 100,
+                                "direction": "LEFT_TO_RIGHT",
+                                "spacingMode": "COLLAPSE_LISTS",
+                                "spaceAbove": {
+                                  "unit": "PT"
+                                },
+                                "spaceBelow": {
+                                  "unit": "PT"
+                                },
+                                "borderBetween": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderTop": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderBottom": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderLeft": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "borderRight": {
+                                  "color": {},
+                                  "width": {
+                                    "unit": "PT"
+                                  },
+                                  "padding": {
+                                    "unit": "PT"
+                                  },
+                                  "dashStyle": "SOLID"
+                                },
+                                "indentFirstLine": {
+                                  "unit": "PT"
+                                },
+                                "indentStart": {
+                                  "unit": "PT"
+                                },
+                                "indentEnd": {
+                                  "unit": "PT"
+                                },
+                                "keepLinesTogether": false,
+                                "keepWithNext": false,
+                                "avoidWidowAndOrphan": false,
+                                "shading": {
+                                  "backgroundColor": {}
+                                },
+                                "pageBreakBefore": false
+                              }
+                            }
+                          }
+                        ],
+                        "tableCellStyle": {
+                          "rowSpan": 1,
+                          "columnSpan": 1,
+                          "backgroundColor": {},
+                          "paddingLeft": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingRight": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingTop": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "paddingBottom": {
+                            "magnitude": 5,
+                            "unit": "PT"
+                          },
+                          "contentAlignment": "TOP"
+                        }
+                      }
+                    ],
+                    "tableRowStyle": {
+                      "minRowHeight": {
+                        "unit": "PT"
+                      }
+                    }
+                  }
+                ],
+                "tableStyle": {
+                  "tableColumnProperties": [
+                    {
+                      "widthType": "EVENLY_DISTRIBUTED"
+                    },
+                    {
+                      "widthType": "EVENLY_DISTRIBUTED"
+                    },
+                    {
+                      "widthType": "EVENLY_DISTRIBUTED"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "startIndex": 2311,
+              "endIndex": 2718,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 2311,
+                    "endIndex": 2469,
+                    "textRun": {
+                      "content": "With lockid and the source chain now we have to find the Allbridge contract on Stacks that matches this same lockid. We can find the Allbridge Stacks contact ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2469,
+                    "endIndex": 2473,
+                    "textRun": {
+                      "content": "here",
+                      "textStyle": {
+                        "underline": true,
+                        "foregroundColor": {
+                          "color": {
+                            "rgbColor": {
+                              "red": 0.06666667,
+                              "green": 0.33333334,
+                              "blue": 0.8
+                            }
+                          }
+                        },
+                        "link": {
+                          "url": "https://docs.allbridge.io/allbridge-overview/bridge-contracts"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 2473,
+                    "endIndex": 2578,
+                    "textRun": {
+                      "content": ", now that we know the source chain and the contact that initiated the transaction we can use the API of ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2578,
+                    "endIndex": 2582,
+                    "textRun": {
+                      "content": "hiro",
+                      "textStyle": {
+                        "underline": true,
+                        "foregroundColor": {
+                          "color": {
+                            "rgbColor": {
+                              "red": 0.06666667,
+                              "green": 0.33333334,
+                              "blue": 0.8
+                            }
+                          }
+                        },
+                        "link": {
+                          "url": "https://explorer.hiro.so/txid/0x59743b04043e82a9057686e99e8f7503adf78013b68d46e6eb32641450594d62?chain=mainnet&tab=transactions"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 2582,
+                    "endIndex": 2695,
+                    "textRun": {
+                      "content": " (Stacks explorer) to find a transaction with the same lockid that the transaction we had in mainnet to find the ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2695,
+                    "endIndex": 2716,
+                    "textRun": {
+                      "content": "following transaction",
+                      "textStyle": {
+                        "underline": true,
+                        "foregroundColor": {
+                          "color": {
+                            "rgbColor": {
+                              "red": 0.06666667,
+                              "green": 0.33333334,
+                              "blue": 0.8
+                            }
+                          }
+                        },
+                        "link": {
+                          "url": "https://explorer.hiro.so/txid/0x36f2d5c245d08de980d0d23e4bd23b088312ce9e4b9845b4fd71930f52aab8fc?chain=mainnet&tab=overview"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 2716,
+                    "endIndex": 2718,
+                    "textRun": {
+                      "content": ".\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 2718,
+              "endIndex": 2720,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 2718,
+                    "endIndex": 2719,
+                    "inlineObjectElement": {
+                      "inlineObjectId": "kix.8zi6hopulrvs",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2719,
+                    "endIndex": 2720,
+                    "textRun": {
+                      "content": "\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 2720,
+              "endIndex": 2783,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 2720,
+                    "endIndex": 2740,
+                    "textRun": {
+                      "content": "It was initiated by ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2740,
+                    "endIndex": 2781,
+                    "textRun": {
+                      "content": "SP388WPTVQMET2Z7M3ANQ6VRR8AATBF8VDPH0RRF9",
+                      "textStyle": {
+                        "underline": true,
+                        "foregroundColor": {
+                          "color": {
+                            "rgbColor": {
+                              "red": 0.06666667,
+                              "green": 0.33333334,
+                              "blue": 0.8
+                            }
+                          }
+                        },
+                        "link": {
+                          "url": "http://SP388WPTVQMET2Z7M3ANQ6VRR8AATBF8VDPH0RRF9"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 2781,
+                    "endIndex": 2782,
+                    "textRun": {
+                      "content": ".",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2782,
+                    "endIndex": 2783,
+                    "textRun": {
+                      "content": "\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 2783,
+              "endIndex": 2784,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 2783,
+                    "endIndex": 2784,
+                    "textRun": {
+                      "content": "\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "headers": null,
+        "footers": null,
+        "footnotes": null,
+        "documentStyle": {
+          "background": {
+            "color": {}
+          },
+          "pageNumberStart": 1,
+          "marginTop": {
+            "magnitude": 72,
+            "unit": "PT"
+          },
+          "marginBottom": {
+            "magnitude": 72,
+            "unit": "PT"
+          },
+          "marginRight": {
+            "magnitude": 72,
+            "unit": "PT"
+          },
+          "marginLeft": {
+            "magnitude": 72,
+            "unit": "PT"
+          },
+          "pageSize": {
+            "height": {
+              "magnitude": 841.8897637795277,
+              "unit": "PT"
+            },
+            "width": {
+              "magnitude": 595.2755905511812,
+              "unit": "PT"
+            }
+          },
+          "marginHeader": {
+            "magnitude": 36,
+            "unit": "PT"
+          },
+          "marginFooter": {
+            "magnitude": 36,
+            "unit": "PT"
+          },
+          "useCustomHeaderFooterMargins": true,
+          "documentFormat": {
+            "documentMode": "PAGES"
+          }
+        },
+        "suggestedDocumentStyleChanges": null,
+        "namedStyles": {
+          "styles": [
+            {
+              "namedStyleType": "NORMAL_TEXT",
+              "textStyle": {
+                "bold": false,
+                "italic": false,
+                "underline": false,
+                "strikethrough": false,
+                "smallCaps": false,
+                "backgroundColor": {},
+                "foregroundColor": {
+                  "color": {
+                    "rgbColor": {}
+                  }
+                },
+                "fontSize": {
+                  "magnitude": 11,
+                  "unit": "PT"
+                },
+                "weightedFontFamily": {
+                  "fontFamily": "Arial",
+                  "weight": 400
+                },
+                "baselineOffset": "NONE"
+              },
+              "paragraphStyle": {
+                "namedStyleType": "NORMAL_TEXT",
+                "alignment": "START",
+                "lineSpacing": 115,
+                "direction": "LEFT_TO_RIGHT",
+                "spacingMode": "COLLAPSE_LISTS",
+                "spaceAbove": {
+                  "unit": "PT"
+                },
+                "spaceBelow": {
+                  "unit": "PT"
+                },
+                "borderBetween": {
+                  "color": {},
+                  "width": {
+                    "unit": "PT"
+                  },
+                  "padding": {
+                    "unit": "PT"
+                  },
+                  "dashStyle": "SOLID"
+                },
+                "borderTop": {
+                  "color": {},
+                  "width": {
+                    "unit": "PT"
+                  },
+                  "padding": {
+                    "unit": "PT"
+                  },
+                  "dashStyle": "SOLID"
+                },
+                "borderBottom": {
+                  "color": {},
+                  "width": {
+                    "unit": "PT"
+                  },
+                  "padding": {
+                    "unit": "PT"
+                  },
+                  "dashStyle": "SOLID"
+                },
+                "borderLeft": {
+                  "color": {},
+                  "width": {
+                    "unit": "PT"
+                  },
+                  "padding": {
+                    "unit": "PT"
+                  },
+                  "dashStyle": "SOLID"
+                },
+                "borderRight": {
+                  "color": {},
+                  "width": {
+                    "unit": "PT"
+                  },
+                  "padding": {
+                    "unit": "PT"
+                  },
+                  "dashStyle": "SOLID"
+                },
+                "indentFirstLine": {
+                  "unit": "PT"
+                },
+                "indentStart": {
+                  "unit": "PT"
+                },
+                "indentEnd": {
+                  "unit": "PT"
+                },
+                "keepLinesTogether": false,
+                "keepWithNext": false,
+                "avoidWidowAndOrphan": true,
+                "shading": {
+                  "backgroundColor": {}
+                },
+                "pageBreakBefore": false
+              }
+            },
+            {
+              "namedStyleType": "HEADING_1",
+              "textStyle": {
+                "fontSize": {
+                  "magnitude": 20,
+                  "unit": "PT"
+                }
+              },
+              "paragraphStyle": {
+                "namedStyleType": "NORMAL_TEXT",
+                "direction": "LEFT_TO_RIGHT",
+                "spaceAbove": {
+                  "magnitude": 20,
+                  "unit": "PT"
+                },
+                "spaceBelow": {
+                  "magnitude": 6,
+                  "unit": "PT"
+                },
+                "keepLinesTogether": true,
+                "keepWithNext": true,
+                "pageBreakBefore": false
+              }
+            },
+            {
+              "namedStyleType": "HEADING_2",
+              "textStyle": {
+                "bold": false,
+                "fontSize": {
+                  "magnitude": 16,
+                  "unit": "PT"
+                }
+              },
+              "paragraphStyle": {
+                "namedStyleType": "NORMAL_TEXT",
+                "direction": "LEFT_TO_RIGHT",
+                "spaceAbove": {
+                  "magnitude": 18,
+                  "unit": "PT"
+                },
+                "spaceBelow": {
+                  "magnitude": 6,
+                  "unit": "PT"
+                },
+                "keepLinesTogether": true,
+                "keepWithNext": true,
+                "pageBreakBefore": false
+              }
+            },
+            {
+              "namedStyleType": "HEADING_3",
+              "textStyle": {
+                "bold": false,
+                "foregroundColor": {
+                  "color": {
+                    "rgbColor": {
+                      "red": 0.2627451,
+                      "green": 0.2627451,
+                      "blue": 0.2627451
+                    }
+                  }
+                },
+                "fontSize": {
+                  "magnitude": 14,
+                  "unit": "PT"
+                }
+              },
+              "paragraphStyle": {
+                "namedStyleType": "NORMAL_TEXT",
+                "direction": "LEFT_TO_RIGHT",
+                "spaceAbove": {
+                  "magnitude": 16,
+                  "unit": "PT"
+                },
+                "spaceBelow": {
+                  "magnitude": 4,
+                  "unit": "PT"
+                },
+                "keepLinesTogether": true,
+                "keepWithNext": true,
+                "pageBreakBefore": false
+              }
+            },
+            {
+              "namedStyleType": "HEADING_4",
+              "textStyle": {
+                "foregroundColor": {
+                  "color": {
+                    "rgbColor": {
+                      "red": 0.4,
+                      "green": 0.4,
+                      "blue": 0.4
+                    }
+                  }
+                },
+                "fontSize": {
+                  "magnitude": 12,
+                  "unit": "PT"
+                }
+              },
+              "paragraphStyle": {
+                "namedStyleType": "NORMAL_TEXT",
+                "direction": "LEFT_TO_RIGHT",
+                "spaceAbove": {
+                  "magnitude": 14,
+                  "unit": "PT"
+                },
+                "spaceBelow": {
+                  "magnitude": 4,
+                  "unit": "PT"
+                },
+                "keepLinesTogether": true,
+                "keepWithNext": true,
+                "pageBreakBefore": false
+              }
+            },
+            {
+              "namedStyleType": "HEADING_5",
+              "textStyle": {
+                "foregroundColor": {
+                  "color": {
+                    "rgbColor": {
+                      "red": 0.4,
+                      "green": 0.4,
+                      "blue": 0.4
+                    }
+                  }
+                },
+                "fontSize": {
+                  "magnitude": 11,
+                  "unit": "PT"
+                }
+              },
+              "paragraphStyle": {
+                "namedStyleType": "NORMAL_TEXT",
+                "direction": "LEFT_TO_RIGHT",
+                "spaceAbove": {
+                  "magnitude": 12,
+                  "unit": "PT"
+                },
+                "spaceBelow": {
+                  "magnitude": 4,
+                  "unit": "PT"
+                },
+                "keepLinesTogether": true,
+                "keepWithNext": true,
+                "pageBreakBefore": false
+              }
+            },
+            {
+              "namedStyleType": "HEADING_6",
+              "textStyle": {
+                "italic": true,
+                "foregroundColor": {
+                  "color": {
+                    "rgbColor": {
+                      "red": 0.4,
+                      "green": 0.4,
+                      "blue": 0.4
+                    }
+                  }
+                },
+                "fontSize": {
+                  "magnitude": 11,
+                  "unit": "PT"
+                }
+              },
+              "paragraphStyle": {
+                "namedStyleType": "NORMAL_TEXT",
+                "direction": "LEFT_TO_RIGHT",
+                "spaceAbove": {
+                  "magnitude": 12,
+                  "unit": "PT"
+                },
+                "spaceBelow": {
+                  "magnitude": 4,
+                  "unit": "PT"
+                },
+                "keepLinesTogether": true,
+                "keepWithNext": true,
+                "pageBreakBefore": false
+              }
+            },
+            {
+              "namedStyleType": "TITLE",
+              "textStyle": {
+                "fontSize": {
+                  "magnitude": 26,
+                  "unit": "PT"
+                }
+              },
+              "paragraphStyle": {
+                "namedStyleType": "NORMAL_TEXT",
+                "direction": "LEFT_TO_RIGHT",
+                "spaceAbove": {
+                  "unit": "PT"
+                },
+                "spaceBelow": {
+                  "magnitude": 3,
+                  "unit": "PT"
+                },
+                "keepLinesTogether": true,
+                "keepWithNext": true,
+                "pageBreakBefore": false
+              }
+            },
+            {
+              "namedStyleType": "SUBTITLE",
+              "textStyle": {
+                "italic": false,
+                "foregroundColor": {
+                  "color": {
+                    "rgbColor": {
+                      "red": 0.4,
+                      "green": 0.4,
+                      "blue": 0.4
+                    }
+                  }
+                },
+                "fontSize": {
+                  "magnitude": 15,
+                  "unit": "PT"
+                },
+                "weightedFontFamily": {
+                  "fontFamily": "Arial",
+                  "weight": 400
+                }
+              },
+              "paragraphStyle": {
+                "namedStyleType": "NORMAL_TEXT",
+                "direction": "LEFT_TO_RIGHT",
+                "spaceAbove": {
+                  "unit": "PT"
+                },
+                "spaceBelow": {
+                  "magnitude": 16,
+                  "unit": "PT"
+                },
+                "keepLinesTogether": true,
+                "keepWithNext": true,
+                "pageBreakBefore": false
+              }
+            }
+          ]
+        },
+        "suggestedNamedStylesChanges": null,
+        "lists": null,
+        "namedRanges": null,
+        "inlineObjects": {
+          "kix.8zi6hopulrvs": {
+            "objectId": "kix.8zi6hopulrvs",
+            "inlineObjectProperties": {
+              "embeddedObject": {
+                "imageProperties": {
+                  "contentUri": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcrVUag7Tq6nPeS8WKIfEje0IOetGWADTy3_eH_bn4nqKCjLgOEtkZ3h8degibN2sFclZItbCu1OmFyV0UQwF5XF6ZdGIg8iF5VnFZ9QZmH-O5j7tNoBdOuU-ee9PPsyVHowXjm8M8K3gWMnCwVwtWapbngeJrL7B7fxjx6eD8ZFG-g=s2048?key=Ow1iKUHa-9YxVrzQJ2gh3w",
+                  "cropProperties": {}
+                },
+                "embeddedObjectBorder": {
+                  "color": {
+                    "color": {
+                      "rgbColor": {}
+                    }
+                  },
+                  "width": {
+                    "unit": "PT"
+                  },
+                  "dashStyle": "SOLID",
+                  "propertyState": "NOT_RENDERED"
+                },
+                "size": {
+                  "height": {
+                    "magnitude": 263,
+                    "unit": "PT"
+                  },
+                  "width": {
+                    "magnitude": 451.27559055118115,
+                    "unit": "PT"
+                  }
+                },
+                "marginTop": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                },
+                "marginBottom": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                },
+                "marginRight": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                },
+                "marginLeft": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                }
+              }
+            }
+          },
+          "kix.abpyz2kdgcrt": {
+            "objectId": "kix.abpyz2kdgcrt",
+            "inlineObjectProperties": {
+              "embeddedObject": {
+                "imageProperties": {
+                  "contentUri": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeGvXwUV6OMh_IqAT0R8JYfF-XvORzufrKernSfnZpyjCQnurO2kV7dEBRud60EyffPmnfdKkMRCwnu0yVYisxaHZCW7iyWFYFb4YR4bG-V3shZaIReQMQKOMK4LkRtqgAO7NaUIsmkvahVKvQfh44Vaje44NC7s788Rpp7r6PJJC413_E=s2048?key=Ow1iKUHa-9YxVrzQJ2gh3w",
+                  "cropProperties": {}
+                },
+                "embeddedObjectBorder": {
+                  "color": {
+                    "color": {
+                      "rgbColor": {}
+                    }
+                  },
+                  "width": {
+                    "unit": "PT"
+                  },
+                  "dashStyle": "SOLID",
+                  "propertyState": "NOT_RENDERED"
+                },
+                "size": {
+                  "height": {
+                    "magnitude": 139,
+                    "unit": "PT"
+                  },
+                  "width": {
+                    "magnitude": 451.27559055118115,
+                    "unit": "PT"
+                  }
+                },
+                "marginTop": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                },
+                "marginBottom": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                },
+                "marginRight": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                },
+                "marginLeft": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                }
+              }
+            }
+          },
+          "kix.h7bke2rjx1em": {
+            "objectId": "kix.h7bke2rjx1em",
+            "inlineObjectProperties": {
+              "embeddedObject": {
+                "imageProperties": {
+                  "contentUri": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcIb1klHR5w6mt_wjrzBdTON4lzuSCsbS5Ki-CdCrmLi0ECeqAT91B_i6M1yW4KvmsFP0JdMz4xuRj3J50RcdJID6WSl3LIscSh2Zq5Yfsp3tckjbq8MTCr0FABOEceHQSBsuQeqThcu8wGDCgL1GTA64jvItOKaA-qMCqmfUJJG3i8cX8=s2048?key=Ow1iKUHa-9YxVrzQJ2gh3w",
+                  "cropProperties": {}
+                },
+                "embeddedObjectBorder": {
+                  "color": {
+                    "color": {
+                      "rgbColor": {}
+                    }
+                  },
+                  "width": {
+                    "unit": "PT"
+                  },
+                  "dashStyle": "SOLID",
+                  "propertyState": "NOT_RENDERED"
+                },
+                "size": {
+                  "height": {
+                    "magnitude": 121,
+                    "unit": "PT"
+                  },
+                  "width": {
+                    "magnitude": 451.27559055118115,
+                    "unit": "PT"
+                  }
+                },
+                "marginTop": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                },
+                "marginBottom": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                },
+                "marginRight": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                },
+                "marginLeft": {
+                  "magnitude": 9,
+                  "unit": "PT"
+                }
+              }
+            }
+          }
+        },
+        "positionedObjects": null,
+        "documentId": "1B_Am3ONG2grNgLWqwwTLyt_6eTFQGXb1SK-SwLJEVFg",
+        "document_url": "https://docs.google.com/document/d/1B_Am3ONG2grNgLWqwwTLyt_6eTFQGXb1SK-SwLJEVFg"
+      }
+    ],
+    "document_url": "https://docs.google.com/document/d/1B_Am3ONG2grNgLWqwwTLyt_6eTFQGXb1SK-SwLJEVFg"
+  },
+  "isError": false
+}

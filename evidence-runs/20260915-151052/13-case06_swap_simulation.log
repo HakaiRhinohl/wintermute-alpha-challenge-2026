@@ -1,0 +1,19 @@
+
+==============================================================================
+[13/17] case06_swap_simulation
+$ forge test --match-path challenges/06-cold-start/SwapSimulation.t.sol -vv
+==============================================================================
+No files changed, compilation skipped
+
+Ran 1 test for challenges/06-cold-start/SwapSimulation.t.sol:SwapSimulation
+[PASS] test_SimulateInnerL2Call() (gas: 146951)
+Logs:
+  === L2 swap simulation ===
+  ETH sent to router 200000000000000000
+  router amount out raw 1259632012429831700738184
+  CASHCAT received raw 1259632012429831700738184
+  CASHCAT received whole 1259632
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 800.54ms (1.01ms CPU time)
+
+Ran 1 test suite in 801.98ms (800.54ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

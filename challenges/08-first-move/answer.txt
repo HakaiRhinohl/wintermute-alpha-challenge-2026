@@ -1,5 +1,5 @@
 # Ink bytes32 claim for the first root attack
-ink_claim =
+ink_claim = 0x82c941153a9de14c4533b301799ee33206b6a475d7c4fdbe7cd2f1c9d7271b6f
 
 # Optimism bytes32 claim for the first root attack
-op_claim =
+op_claim = 0x192f163548d61d555a282e1ffcec8ec7b1e4cf9deced7e910b87292f0aeab5f1

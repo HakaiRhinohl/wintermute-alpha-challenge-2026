@@ -1,0 +1,21 @@
+
+==============================================================================
+[11/17] case06_retryable_envelope
+$ forge test --match-path challenges/06-cold-start/InboxEnvelopeInspector.t.sol -vv
+==============================================================================
+No files changed, compilation skipped
+
+Ran 1 test for challenges/06-cold-start/InboxEnvelopeInspector.t.sol:InboxEnvelopeInspector
+[PASS] test_InspectEnvelope() (gas: 129910)
+Logs:
+  === retryable-ticket envelope ===
+  L1 ETH attached 200507049011771632
+  submission fee 7049011771632
+  retryable gas budget 500000000000000
+  L2 destination 0xCaf681a66D020601342297493863E78C959E5cb2
+  L2 call value 200000000000000000
+  embedded calldata bytes 228
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 744.00ms (743.51ms CPU time)
+
+Ran 1 test suite in 745.83ms (744.00ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

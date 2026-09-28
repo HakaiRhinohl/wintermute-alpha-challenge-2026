@@ -1,0 +1,21 @@
+
+==============================================================================
+[8/17] case02_external_knc_price
+$ forge test --match-path challenges/02-falling-dutchman/ExternalPriceInspector.t.sol -vv
+==============================================================================
+No files changed, compilation skipped
+
+Ran 1 test for challenges/02-falling-dutchman/ExternalPriceInspector.t.sol:ExternalPriceInspector
+[PASS] test_InspectKncMarket() (gas: 31616)
+Logs:
+  === External KNC market at the fork block ===
+  fork block 9462777
+  Uniswap V1 KNC exchange 0x49c4f9bc14884f6210F28342ceD592A633801a8b
+  input ETH (raw) 100000000000000000
+  KNC quote for 0.1 ETH (raw) 62865191752838287641
+  whole KNC in quote 62
+  KNC remainder (18-decimal units) 865191752838287641
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 759.30ms (451.38µs CPU time)
+
+Ran 1 test suite in 760.84ms (759.30ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

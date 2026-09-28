@@ -1,0 +1,77 @@
+
+==============================================================================
+[16/17] case07_liquid_route_graph
+$ forge test --match-path challenges/07-firepit/LiquidRouteState.t.sol -vv
+==============================================================================
+Compiling 1 files with Solc 0.8.33
+Solc 0.8.33 finished in 538.23ms
+Compiler run successful!
+
+Ran 1 test for challenges/07-firepit/LiquidRouteState.t.sol:LiquidRouteState
+[PASS] test_ListActiveLiquidity() (gas: 127068)
+Logs:
+  === Direct USDT0 routes with active liquidity ===
+  asset WOKB
+  fee tier 100
+  pool 0x9e485CC2Ec10E87A9B6e58602889Df392B7F6453
+  active liquidity
+  55663966657737927
+  asset WOKB
+  fee tier 500
+  pool 0xe3BE6A0137f1b0602Fc1a4841686f43B340a5082
+  active liquidity
+  186644566879971903
+  asset WOKB
+  fee tier 3000
+  pool 0x63d62734847E55A266FCa4219A9aD0a02D5F6e02
+  active liquidity
+  49784040342937198
+  asset xBTC
+  fee tier 100
+  pool 0x6CF6A073dDdd6fdD74b1b9f149621E85f01AACb9
+  active liquidity
+  4696736211
+  asset xBTC
+  fee tier 500
+  pool 0x5fcFb33C9AB1665FeE892eB2aF163e863a874D73
+  active liquidity
+  13722354
+  asset xBTC
+  fee tier 3000
+  pool 0x75255002FEc0E917BF3c8FB588c4C0218460eC5c
+  active liquidity
+  0
+  asset xETH
+  fee tier 100
+  pool 0x1598889895752De04cb12d23ef60fC7Ca7907922
+  active liquidity
+  0
+  asset xETH
+  fee tier 500
+  pool 0x77ef18adF35f62B2Ad442e4370cDbC7fe78B7dcC
+  active liquidity
+  1082297435214
+  asset xETH
+  fee tier 3000
+  pool 0x2B702e9D8925251eB7e59950Cc22e4110750D59d
+  active liquidity
+  0
+  asset USDG
+  fee tier 100
+  pool 0x0cBe0dBE1400e57f371a38BD3b9bC80F7C3676dA
+  active liquidity
+  8827303613103492
+  asset AOXC
+  fee tier 3000
+  pool 0x1200E29A106F9e1eE5334D741A1f26346AA49aF2
+  active liquidity
+  0
+  asset xSOL
+  fee tier 500
+  pool 0x4651300221f345a4c6F566079BD1DDC291049c7d
+  active liquidity
+  6689503
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 663.56ms (857.50µs CPU time)
+
+Ran 1 test suite in 704.15ms (663.56ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

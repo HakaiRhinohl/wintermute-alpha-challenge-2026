@@ -1,0 +1,20 @@
+Evidence run: 2026-09-15T15:12:47
+Jobs: 17
+
+      PASS  case01_stacks_schema
+      PASS  case01_find_matching_lock
+      PASS  case02_scheduled_auctions
+      PASS  case06_cashcat_mint
+      PASS  case06_cashcat_approvals
+      PASS  case08_first_move_both_chains
+      PASS  case02_auction_state
+      PASS  case02_external_knc_price
+      PASS  case03_liquity_state
+      PASS  case06_l2_cashcat
+      PASS  case06_retryable_envelope
+      PASS  case06_uniswap_pool
+      PASS  case06_swap_simulation
+      PASS  case07_firepit_state
+      PASS  case07_fee_basket
+      PASS  case07_liquid_route_graph
+      PASS  case07_direct_exit_quotes

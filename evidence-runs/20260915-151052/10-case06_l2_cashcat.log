@@ -1,0 +1,26 @@
+
+==============================================================================
+[10/17] case06_l2_cashcat
+$ forge test --match-path challenges/06-cold-start/L2Inspector.t.sol -vv
+==============================================================================
+No files changed, compilation skipped
+
+Ran 1 test for challenges/06-cold-start/L2Inspector.t.sol:L2Inspector
+[PASS] test_InspectCashcat() (gas: 38433)
+Logs:
+  === Robinhood L2 reconnaissance ===
+  fork block 120000
+  CASHCAT 0x020bfC650A365f8BB26819deAAbF3E21291018b4
+  CASHCAT bytecode bytes 4830
+  name Cash Cat
+  symbol CASHCAT
+  decimals 18
+  total supply raw 1000000000000000000000000000
+  user 0x6937971FEB0fe24f963d3431eEbB39D75c2087BF
+  user CASHCAT raw 0
+  L2 alias 0x7A48971FEb0fE24f963D3431EEBB39d75c2098D0
+  alias CASHCAT raw 0
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 764.63ms (485.08µs CPU time)
+
+Ran 1 test suite in 768.47ms (764.63ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

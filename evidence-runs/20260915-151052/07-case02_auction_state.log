@@ -1,0 +1,25 @@
+
+==============================================================================
+[7/17] case02_auction_state
+$ forge test --match-path challenges/02-falling-dutchman/AuctionInspector.t.sol -vv
+==============================================================================
+No files changed, compilation skipped
+
+Ran 1 test for challenges/02-falling-dutchman/AuctionInspector.t.sol:AuctionInspector
+[PASS] test_InspectAuction() (gas: 65491)
+Logs:
+  === DutchX historical auction inspector ===
+  fork block 9462777
+  auction index 1051
+  auction start (Unix seconds) 1581354875
+  current price numerator 17033467344264227443149225
+  current price denominator 1172190779636348006673750
+  previous closing price numerator 5823407639064693142957
+  previous closing price denominator 9253528949171880850
+  current WETH sell volume (raw) 4482232591529073942
+  current KNC buy volume (raw) 0
+  clearing time (0 means not cleared) 0
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 876.42ms (2.32ms CPU time)
+
+Ran 1 test suite in 882.06ms (876.42ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

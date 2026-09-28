@@ -1,0 +1,23 @@
+
+==============================================================================
+[3/17] case02_scheduled_auctions
+$ /Library/Developer/CommandLineTools/usr/bin/python3 scripts/list_dutchx_auctions.py
+==============================================================================
+Reading blocks 9,455,577–9,456,576
+Reading blocks 9,456,577–9,457,576
+Reading blocks 9,457,577–9,458,576
+Reading blocks 9,458,577–9,459,576
+Reading blocks 9,459,577–9,460,576
+Reading blocks 9,460,577–9,461,576
+Reading blocks 9,461,577–9,462,576
+Reading blocks 9,462,577–9,462,777
+                                                  
+DutchX auctions scheduled from block 9,455,577 to 9,462,777
+Only events before the fork are shown. This is not current mainnet state.
+
+Block 9,456,378  auction #1051
+  sell:  0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+  buy:   0xdd974d5c2e2928dea5f71b9825b8b646686bd200
+  start: 2020-02-10 17:14 UTC
+  tx:    0xb8b121ca05190b931404a4f53bcdc568219c900dbbc6da135ce1e52083e44f9f
+

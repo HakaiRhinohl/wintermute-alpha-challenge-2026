@@ -1,0 +1,13 @@
+
+==============================================================================
+[1/17] case01_stacks_schema
+$ /Library/Developer/CommandLineTools/usr/bin/python3 scripts/inspect_stacks_api.py
+==============================================================================
+Contract: SP3Y2ZSH8P7D50B0VBTSX11S7XSG24M1VB9YFQA4K.bridge
+Transactions indexed by Hiro: 5008
+
+0xc6e0dacee66c0e8444dc2a6e70b0d8fffb0d9409e7382b13026cfee7f3c3201d  lock  lock-id=0x0188b05d8ec73b6a3382b2229ebb459a
+0x488ade3058cb8d582e5260dcc13f4ee87fdf1d027d631dc194250784e7d2c3e9  unlock  lock-id=0x01f8bf059093cd099630a21746c501ce
+0xf6ac8c45ea8c08de63483080247189a17545b67911afbca15ab3deaec43b15f0  lock  lock-id=0x01652fce66956f5d6ce6b9751ec1f1ed
+0x1362114852105f32856102a22f8ef4646821b358352d964e9c596e6455c77480  lock  lock-id=0x01fb6c6edcb5d60ec2abf350d81cc9ec
+0x4607bc02af77dcecbc17bc4fa5a1451dc1f969a94e92f40019e208c5d2794ed1  unlock  lock-id=0x01cbe8af6e91f1166615635d72ed23af

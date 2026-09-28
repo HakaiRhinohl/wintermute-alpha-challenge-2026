@@ -1,0 +1,57 @@
+
+==============================================================================
+[6/17] case08_first_move_both_chains
+$ /Library/Developer/CommandLineTools/usr/bin/python3 scripts/inspect_first_move_op.py --chain all
+==============================================================================
+=== Ink case-08: first root attack ===
+retained L1 head 0xd74f339891bc1c4af93bf4bb55c03fc3feb62da272a1f7aa3eabb9e2410126f4
+retained L1 block number 25785478
+starting L2 block 52959235
+split depth 30
+gindex-2 theoretical L2 block 589830147
+why it is not queried directly it must be clamped to the L1-derived safe head
+op-node safe-head API unavailable: {"code": -32601, "message": "Method not found"}
+L1-origin upper-bound diagnostic 53599924
+batch containing that diagnostic block 46835
+batch 46835 L1 inclusion 25785509 L2 range 53599387-53600178
+batch 46834 L1 inclusion 25785442 L2 range 53598599-53599386
+safe-head source L1 batch-publication boundary, cross-checked with L1 RPC
+L2 safe head 53599386
+honest block after clamp 53599386
+L1 origin at honest block 25785434
+op-node output-root API unavailable: {"code": -32601, "message": "Method not found"}
+eth_getProof unavailable; using header field: {"code": -32602, "message": "distance to target block exceeds maximum proof window"}
+L2 header timestamp 1787097797
+L2 state root 0xbe72c5da04eaa1b891d90ed1f56dc6a50daf0980bfae6f64ddcb683b3f91a924
+message passer root source withdrawalsRoot in the L2 header (eth_getProof unavailable)
+message passer storage root 0xbcd8019d2e1740aaaaa1e16c06dc01c33b1346ab9bd0388bbd8219f2fee697be
+L2 block hash 0x9135c19cd2a6815b5302c9f82367867e3db5ad4c47707880c220dc53b2dcdb9c
+
+candidate claim for attack(rootClaim, 0, claim) 0x82c941153a9de14c4533b301799ee33206b6a475d7c4fdbe7cd2f1c9d7271b6f
+
+=== Optimism case-08: first root attack ===
+retained L1 head 0xd74f339891bc1c4af93bf4bb55c03fc3feb62da272a1f7aa3eabb9e2410126f4
+retained L1 block number 25785478
+starting L2 block 155446493
+split depth 30
+gindex-2 theoretical L2 block 692317405
+why it is not queried directly it must be clamped to the L1-derived safe head
+op-node safe-head API unavailable: {"code": -32601, "message": "Method not found"}
+L1-origin upper-bound diagnostic 155749778
+batch containing that diagnostic block 490773
+batch 490773 L1 inclusion 25785492 L2 range 155749737-155749808
+batch 490772 L1 inclusion 25785480 L2 range 155749671-155749736
+batch 490771 L1 inclusion 25785468 L2 range 155749598-155749670
+safe-head source L1 batch-publication boundary, cross-checked with L1 RPC
+L2 safe head 155749670
+honest block after clamp 155749670
+L1 origin at honest block 25785460
+op-node output-root API unavailable: {"code": -32601, "message": "Method not found"}
+eth_getProof unavailable; using header field: {"code": -32602, "message": "distance to target block exceeds maximum proof window"}
+L2 header timestamp 1787098117
+L2 state root 0x0922f5b4ffa9093a2350dce074e2ed468126f36d2f80b8cdef2168a953e4eea3
+message passer root source withdrawalsRoot in the L2 header (eth_getProof unavailable)
+message passer storage root 0xa01a8efbb96fe07d1be06c608c3d0767daa6377dbdbd90831a8983826fb6a1d3
+L2 block hash 0x0326c7d5573ede61f86667a861fe65ced4909ecba19a3747584730b90441380a
+
+candidate claim for attack(rootClaim, 0, claim) 0x192f163548d61d555a282e1ffcec8ec7b1e4cf9deced7e910b87292f0aeab5f1
